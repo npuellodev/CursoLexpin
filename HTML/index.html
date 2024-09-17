@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <!--div>div*6>h2+p
+    esto se usa para crear las etiquetas mas de manera mas eficaz y rapida-->
+    <!--section#inicio>div*2>h2+p
+    en este caso la section llevaria el id inicio y las secciones 
+    llevan un conjunto de etiquetas adentro con un fin-->
+    <nav>
+      <input type="text" /><button>search</button>
+      <a href="./intro.html">intro</a>
+    </nav>
+    <!--Cabecera (seccion de la parte de arriba de la pagina)-->
+    <header>
+      <h2>Nicolas Guerrero</h2>
+    </header>
+    <!--contenido principal de la pagina-->
+    <main>
+      <!--formulario-->
+      <form action="">
+        <!--label+input tipo texto-->
+        <label for="name">name</label>
+        <input
+          type="text"
+          name="name"
+          required
+          placeholder="name"
+        /><!--requeired es para que sea obligatorio-->
+
+        <label for="Email">Email</label>
+        <input type="email" name="Email" placeholder="Email" />
+
+        <label for="password">password</label>
+        <input type="password" name="password" placeholder="password" />
+
+        <label for="Birthdate">Birthdate</label>
+        <input type="date" name="Birthdate" />
+
+        <label for="Country">Country</label>
+        <select name="Country">
+          <option value="" default>Select one</option>
+          <option value="Venezuela">Venezuela</option>
+          <option value="Colombia">Colombia</option>
+          <option value="Argentina">Argentina</option>
+        </select>
+
+        <input type="submit" value="send" />
+      </form>
+    </main>
+    <section id="nosotros">
+      <div>
+        <h2></h2>
+        <p></p>
+      </div>
+    </section>
+    <!--contenido lateral-->
+    <aside></aside>
+    <!--pie de pagina-->
+    <footer></footer>
+  </body>
+</html>
