@@ -1,0 +1,34 @@
+nav{
+    /*
+    los valores se leen en el sentido de
+    las agujas de reloj, iniciando desde
+    las 12
+    padding: 10px 20px 10px 20px;
+    hay otra manera de hacer esto, pero es mucho
+    más larga
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px
+  */
+    padding: 10px 20px 10px 20px;
+    /*
+    El display maneja como se muestran los
+    elementos o si se muestran
+  */
+    display: flex;
+    /*Maneja el eje principal del elemento (solo se usa si display es flex)*/
+    /*space-between: separa los elementos en los extremos*/
+    justify-content: space-between;
+    /*Manejo del eje secundario del elemento*/
+    align-items: center;
+}
+
+nav > div{
+    display: flex;
+    /*flex-direction: column; (aqui se manejan los elementos en columnas)*/
+    justify-content: center;
+    /*espacio entre elementos*/
+    gap: 12px;
+}
+

@@ -4,15 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <!--Css in block-->
+    <!--se coloca en el head debido a que la pagina carga de arriba a abajo-->
+    <style>
+        p{
+            color:azure;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <h2></h2>
-        <p></p>
-    </div>
-    <div>
-        <h2></h2>
-        <p></p>
-    </div>
+    <!--Css in line-->
+    <nav style="background-color: cornflowerblue;">
+        <div>
+            <p>logo</p>
+        </div>
+        <div>
+            <p>Inicio</p>
+            <p>Productos</p>
+            <p>FAQ</p>
+            <button>Contactame</button>
+        </div>
+    </nav>
 </body>
 </html>
