@@ -1,3 +1,9 @@
+/*Variables en css*/
+:root{
+    --color-primary: cornflowerblue;
+    --color-secondary: azure;
+}
+
 nav{
     /*
     los valores se leen en el sentido de
@@ -22,6 +28,9 @@ nav{
     justify-content: space-between;
     /*Manejo del eje secundario del elemento*/
     align-items: center;
+    font-size: 24px;
+    /*degradado*/
+    background: linear-gradient(90deg, #2b83e9, #34495e);
 }
 
 nav > div{
@@ -30,5 +39,99 @@ nav > div{
     justify-content: center;
     /*espacio entre elementos*/
     gap: 12px;
+}
+
+.hover:hover{
+    color: var(--color-primary);
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#botton{
+  background-color:#900C3F;
+  color: var(--color-secondary);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/*PSEUDO CLASES*/
+/*Maneja el estado de un elemento*/
+/*
+LISTA DE PSEUDO CLASES
+:active (cuando se da click)
+:focus (cuando se selecciona)
+:hover (cuando se pasa el mouse)
+:visited (cuando ya se visitó)
+:link (cuando no se ha visitado)
+:first-child (primer hijo)
+:last-child (último hijo)
+*/
+#botton:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  border: 2px solid var(--color-base);
+  cursor: pointer;
+  /*transition: propiedad tiempo efecto;*/
+  transition: background-color 0.5s, color 0.5s;
+}
+
+
+.menu{
+  display: none;
+}
+
+/*Query Responsive*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /*
+  body{
+    background-color: red;
+  }
+  */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /*
+  body{
+    background-color: green;
+  }
+  */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /*
+  body{
+    background-color: aqua;
+  }
+  */
+  .menu{
+    display:flex;
+  }
+  .menu-responsive{
+      display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /*
+  body{
+    background-color: blue;
+  }
+  */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /*
+  body{
+    background-color: yellow;
+  }
+  */
 }
 
